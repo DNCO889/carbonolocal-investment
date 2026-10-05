@@ -1,0 +1,82 @@
+.model-legend{display:flex;gap:20px;flex-wrap:wrap;margin:30px 0}.model-legend span{font-size:13px;padding-left:19px;position:relative}.model-legend span:before{content:'';position:absolute;left:0;top:6px;width:10px;height:10px;border-radius:50%}.de-key:before{background:#1b4034}.co-key:before{background:#4c2933}.co-entity{background:#f2e2e7;border-color:#4c2933}.co-entity h2,.co-entity h3{color:#4c2933}.diagram-wrap{background:#fff;border:1px solid var(--line);padding:24px;margin-top:30px;overflow-x:auto}.diagram-wrap svg{display:block;min-width:960px;width:100%;height:auto;margin:auto}.diagram-wrap pre{font-size:13px}.mermaid-source pre{white-space:pre-wrap;font-size:12px;padding:20px;background:#edf0e6;overflow:auto}.model-table{border-collapse:collapse;width:100%;min-width:720px;text-align:left;margin:24px 0}.model-table caption{text-align:left;font-size:13px;color:var(--muted);margin-bottom:24px}.model-table th,.model-table td{padding:20px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px}.model-table thead th{font-weight:500;font-size:15px}.model-table tbody th{width:22%;font-size:13px;font-weight:500}.model-table td:nth-child(2){background:#edf2e9;width:39%}.model-table td:nth-child(3){background:#f7edf0;width:39%}.model-table .de-col{background:#1b4034;color:#fff}.model-table .co-col{background:#4c2933;color:#fff}.allocation-bar{display:flex;min-height:160px;margin:34px 0 20px}.allocation-bar>div{padding:24px;display:flex;gap:18px;align-items:center}.participants-share{width:40%;background:#dce89a;color:#18382e}.gmbh-share{width:60%;background:#1b4034;color:#fff}.allocation-bar strong{font:400 52px/1 var(--serif)}.allocation-bar span{font-size:14px;line-height:1.7}.model-execution{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin:38px 0}.model-execution article{border-top:3px solid;padding-top:10px}.de-flow{border-color:#1b4034!important}.co-flow{border-color:#4c2933!important}.co-flow h3{color:#4c2933}.model-execution p{font-size:15px}@media(max-width:600px){.diagram-wrap{padding:14px}.allocation-bar>div{display:block;padding:18px}.allocation-bar span{display:block;font-size:12px;margin-top:12px}.allocation-bar strong{font-size:40px}.model-execution{grid-template-columns:1fr}}
+.impact-canvas{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#a7b5a7;border:1px solid #a7b5a7;margin:38px 0}.canvas-cell{position:relative;background:#eef2e9;padding:26px 24px;min-height:235px}.co-canvas{background:#cda2ac;border-color:#cda2ac}.co-canvas .canvas-cell{background:#f7edf0}.canvas-number{font-size:12px;letter-spacing:.13em;color:#71836b}.co-canvas .canvas-number,.co-page h1,.co-page h3{color:#4c2933}.canvas-cell h3{font-size:19px;margin:16px 0 14px}.canvas-cell p{font-size:14px;line-height:1.7;margin:0}.canvas-page h1{font-size:64px}.toc-line{padding:26px;border-left:4px solid #1b4034;background:#eef2e9;font-size:18px}.co-page .toc-line{border-color:#4c2933;background:#f7edf0}.technology-intro{display:grid;grid-template-columns:1fr 1fr;gap:36px}.technology-definition{padding:26px;background:#f2e2e7;border-top:3px solid #4c2933}.technology-definition h3{margin-top:0}.technology-intro p{font-size:15px}.pachavera-embed{border:1px solid #cda2ac;margin:36px 0;padding:26px}.embed-heading{display:flex;justify-content:space-between;align-items:center;gap:20px}.embed-heading h3{margin:0}.platform-preview iframe{width:100%;height:580px;border:0;background:#fff}.platform-preview{margin-top:24px}.model-links{display:flex;gap:28px;flex-wrap:wrap}.diagram-wrap.executive-diagram svg{min-width:0;width:100%;max-width:100%!important}.diagram-wrap.system-diagram svg{min-width:2100px;width:2100px;max-width:none!important}.pipeline-card{border-left:4px solid #4c2933;background:#f2e2e7;padding:26px;margin:32px 0}.pipeline-card h3{margin-top:8px}.pipeline-card p{font-size:15px}.income-table td:nth-child(2),.income-table td:nth-child(3){background:#f7edf0}@media(max-width:1050px){.impact-canvas{grid-template-columns:repeat(2,1fr)}.canvas-cell:last-child{grid-column:1/-1}.canvas-page h1{font-size:56px}}@media(max-width:600px){.impact-canvas,.technology-intro{grid-template-columns:1fr}.canvas-cell{min-height:0}.canvas-page h1{font-size:46px}.embed-heading{align-items:start;flex-direction:column}.platform-preview iframe{height:440px}.diagram-wrap.executive-diagram svg{min-width:580px;width:580px;max-width:none!important}}
+
+/* Entity branding: Carbono Local greens and Pachavera rose / brown. */
+:root{--sas-ink:#4c2933;--sas-rose:#b78191;--sas-deep-rose:#a26b7a;--sas-pink:#debfc7;--sas-line:#cda2ac;--sas-paper:#f7edf0}
+.de-canvas{background:#72917c;border-color:#72917c}
+.de-canvas .canvas-cell{background:#1b4034;color:#f7f7f1}
+.de-canvas .canvas-cell:nth-child(even){background:#214b3d}
+.de-canvas .canvas-cell h3,.de-canvas .canvas-number{color:#dce89a}
+.de-page .toc-line{background:#1b4034;color:#f7f7f1;border-left-color:#dce89a}
+.de-page h1{color:#1b4034}
+.co-page{color:var(--sas-ink);--ink:var(--sas-ink);--muted:#78545f;--line:var(--sas-line)}
+.co-page .lead,.co-page .fine{color:#78545f}
+.co-canvas{background:var(--sas-line);border-color:var(--sas-line)}
+.co-canvas .canvas-cell{background:var(--sas-paper)}
+.co-canvas .canvas-cell:nth-child(even){background:#f2e2e7}
+.co-canvas .canvas-number{color:#805460}
+.co-canvas .canvas-cell h3{color:var(--sas-ink)}
+.co-page .toc-line{background:#f2e2e7;border-left-color:var(--sas-deep-rose)}
+.co-page .technology-definition,.co-page .pipeline-card{background:#f2e2e7;border-color:var(--sas-deep-rose)}
+.co-page .income-table .co-col{background:var(--sas-ink);color:#fff}
+.pachavera-brand{margin:58px 0 30px;padding:22px 26px;background:#fff;border:1px solid var(--sas-line)}
+.pachavera-brand img{display:block;width:min(100%,390px);height:auto}
+.pachavera-brand+.section-title{margin-top:30px}
+#tab-sas-model[aria-selected=true]{color:#4c2933;border-bottom-color:#b78191}
+#tab-gmbh-model[aria-selected=true]{color:#1b4034;border-bottom-color:#1b4034}
+.model-links [data-go="sas-model"]{color:#4c2933;border-color:#b78191}
+
+.investment-entities{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:44px 0}
+.investment-entities>article{padding:30px;display:flex;flex-direction:column}
+.investment-entities h2{font-size:46px}.investment-entities p{font-size:15px}
+.investment-entities .eyebrow{font-size:11px}
+.investment-sas{background:#f2e2e7;border-top:4px solid #b78191;color:#4c2933}
+.investment-gmbh{background:#1b4034;color:#f7f7f1;border-top:4px solid #dce89a}
+.investment-gmbh h2,.investment-gmbh h3,.investment-gmbh .investment-contract strong{color:#dce89a}
+.investment-contract{margin-top:auto;padding-top:24px;border-top:1px solid #b78191}
+.investment-contract>span{display:block;font-size:10px;letter-spacing:.12em}
+.investment-contract>strong{display:block;font:400 36px/1.2 var(--serif);margin:12px 0}
+.investment-gmbh .investment-contract{border-color:#72917c}
+.investment-contract p{font-size:14px;margin-bottom:0}
+.sas-funding-grid article{border-color:#cda2ac}.sas-funding-grid h3{color:#4c2933}
+.investment-evidence{padding:28px;background:#f7edf0;border-left:4px solid #b78191;margin:42px 0;color:#4c2933}
+.investment-evidence p{font-size:15px}.investment-evidence .fine{font-size:13px;color:#78545f}
+@media(max-width:750px){.investment-entities{grid-template-columns:1fr}.investment-entities>article{padding:26px}.investment-entities h2{font-size:42px}}
+
+.growth-section{margin:64px 0 50px;padding-top:40px;border-top:1px solid var(--line)}
+.growth-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:30px 0}
+.growth-kpis article{background:#edf2e9;padding:24px 20px;border-top:3px solid #72917c}
+.growth-kpis span{display:block;font-size:10px;letter-spacing:.11em;min-height:38px}
+.growth-kpis strong{font:400 clamp(30px,3.4vw,45px)/1.2 var(--serif);display:block;margin:12px 0}
+.growth-kpis p{font-size:12px;line-height:1.6;margin:0}
+.growth-kpis .growth-baseline{background:#1b4034;color:#f7f7f1;border-color:#dce89a}
+.growth-baseline strong{color:#dce89a}
+.growth-kpis .growth-rate{background:#f2e2e7;color:#4c2933;border-color:#b78191}
+.growth-bars{padding:24px;background:#fff;border:1px solid var(--line);margin:26px 0}
+.growth-bars>div{display:grid;grid-template-columns:215px 1fr;align-items:center;gap:20px;margin:18px 0}
+.growth-bars span{font-size:13px}.growth-track{background:#edf2e9;height:18px}.growth-track i{display:block;height:100%;background:#1b4034}.growth-bars>div:first-child i{background:#72917c}
+.growth-calculation{font-size:15px}.growth-section .fine{max-width:920px}
+@media(max-width:900px){.growth-kpis{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.growth-bars>div{grid-template-columns:1fr;gap:8px}.growth-kpis{gap:12px}.growth-kpis article{padding:20px 14px}.growth-kpis strong{font-size:33px}}
+
+.financing-options{margin:56px 0}.financing-table{min-width:820px}
+.financing-table thead th{background:#4c2933;color:#fff;font-size:11px;letter-spacing:.06em}
+.financing-table tbody th{width:8%;color:#4c2933}
+.financing-table td:nth-child(2){width:30%;background:#f7edf0}
+.financing-table td:nth-child(3){width:20%;background:#fff}
+.financing-table td:nth-child(4){width:20%;background:#f7edf0}
+.financing-table td:nth-child(5){width:22%;background:#fff}
+.funding-amount{text-align:right;white-space:nowrap;font-weight:500;color:#4c2933}
+.funding-status{font-size:12px;color:#78545f}
+.financing-table tfoot th,.financing-table tfoot td{background:#f2e2e7;font-size:13px;border-top:2px solid #b78191}
+@media(max-width:900px){.financing-table{min-width:0;table-layout:fixed}.financing-table th,.financing-table td{padding:14px 8px;font-size:12px;overflow-wrap:anywhere}.financing-table thead th{font-size:9px}.financing-table thead th:first-child,.financing-table tbody th{width:10%}.financing-table thead th:nth-child(2),.financing-table td:nth-child(2){width:29%}.financing-table thead th:nth-child(3),.financing-table td:nth-child(3){width:18%}.financing-table thead th:nth-child(4),.financing-table td:nth-child(4){width:18%}.financing-table thead th:nth-child(5),.financing-table td:nth-child(5){width:25%}.financing-table .funding-amount{white-space:nowrap;overflow-wrap:normal}.financing-table .funding-status{font-size:11px}}
+
+.venture-support{padding:30px;background:#edf2e9;border-top:3px solid #1b4034;margin:36px 0}
+.venture-support p{font-size:15px}.venture-support .fine{font-size:13px}
+.venture-chain{display:grid;grid-template-columns:1fr 24px 1fr 24px 1fr;align-items:center;gap:14px;margin:28px 0}
+.venture-chain>div{background:#1b4034;color:#fff;padding:20px;min-height:134px}
+.venture-chain strong{display:block;color:#dce89a;font-size:18px;margin-bottom:12px}
+.venture-chain span{font-size:12px;display:block;line-height:1.6}
+.venture-chain b{text-align:center;font-size:24px;font-weight:400}
+.venture-chain .venture-sas{background:#f2e2e7;color:#4c2933}.venture-sas strong{color:#4c2933}
+@media(max-width:750px){.venture-chain{grid-template-columns:1fr}.venture-chain b{transform:rotate(90deg)}.venture-chain>div{min-height:0}.venture-support{padding:24px}}
